@@ -60,7 +60,7 @@ The stream returned from `through()` (and `this` within your transform function)
 class, which extends [Duplex](https://github.com/iojs/readable-stream/blob/master/lib/_stream_duplex.js),
 [Readable](https://github.com/iojs/readable-stream/blob/master/lib/_stream_readable.js)
 (and parasitically from Writable) and ultimately [Stream](https://nodejs.org/api/stream.html).  
-If you need to parse additional options, you can call the `through()` function directly:
+If you need to pass additional options, you can call the `through()` function directly:
 
 ```js
   return through({objectMode: true /* other options... */}, function(file, encoding, callback) { ...
